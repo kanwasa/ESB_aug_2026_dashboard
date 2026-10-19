@@ -12,6 +12,8 @@ The source states the data is DST-based but does not establish in the verified F
 
 Power to energy: **average interval kW × 0.5 hours = average interval kWh**. These kWh are *representative average-meter* interval values. Summing 48 intervals gives a **typical-day energy estimate**, not measured monthly customer consumption or a verified bill. No weekday/weekend inference is possible.
 
+
+
 ## Local setup
 
 1. Create venv: `python -m venv .venv` and activate (`.venv\Scripts\Activate.ps1` in Windows PowerShell).
@@ -53,6 +55,33 @@ If the actual CSV contains many more groups, months, or another record grain, re
 | `import_kwh`, `export_kwh` | Representative interval energy, kW × 0.5 h |
 | `shift_share` | Hypothetical fraction of peak energy moved |
 | `hypothetical_daily_saving_eur` | Modelled energy-only saving per representative day |
+
+
+
+# Data visualisations
+
+
+<img width="422" height="415" alt="image" src="https://github.com/user-attachments/assets/8de7f2b3-56ff-430e-a91b-237b86a7380c" />
+
+## Executive Dashboard
+
+![ESB Smart Meter Dashboard](reports/dashboard_overview.png)
+
+### Project Highlights
+
+- Analysed 144 aggregated smart-meter profile records
+  across three DUoS groups.
+- Developed a Python ETL pipeline with PostgreSQL
+  storage and automated data validation.
+- Created analytical SQL views for electricity usage,
+  hypothetical tariffs and load-shifting scenarios.
+- Built a Power BI dashboard communicating consumption
+  trends, modelled costs and potential savings.
+
+### Technologies
+Python | Pandas | PostgreSQL | SQL | psycopg |
+pytest | Power BI
+
 
 ## Known limitations and validation
 
