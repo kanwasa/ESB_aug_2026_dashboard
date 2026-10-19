@@ -65,8 +65,6 @@ If the actual CSV contains many more groups, months, or another record grain, re
 
 ## Executive Dashboard
 
-![ESB Smart Meter Dashboard](visualisations/dashboard_overview.png)
-
 ### Project Highlights
 
 - Analysed 144 aggregated smart-meter profile records
