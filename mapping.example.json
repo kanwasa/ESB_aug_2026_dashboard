@@ -1,0 +1,11 @@
+{
+  "record_layout": "monthly_profile",
+  "unit": "kW",
+  "header_row": 1,
+  "slot_label": "end",
+  "group": "DUoS Group",
+  "month": "MONTH",
+  "time": "Interval timestamp",
+  "import_kw": "Avg Active Import interval data",
+  "export_kw": "Avg Active Export interval data"
+}
